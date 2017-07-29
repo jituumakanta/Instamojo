@@ -293,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
         HttpUrl url = getHttpURLBuilder()
                 .addPathSegment("create")
                 .build();
-
+        System.out.println("urll"+url);
         RequestBody body = new FormBody.Builder()
                 .add("env", currentEnv.toLowerCase())
                 .build();
